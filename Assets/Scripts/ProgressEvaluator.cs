@@ -189,8 +189,8 @@ public class ProgressEvaluator : MonoBehaviour
 
 
     private void HighDist90Band()
-    {/*
-#if HD90
+    {
+
         // Test: Check PrintAndHide and Tag of RedPrefab
         string path = Directory.GetFiles("./", "RedPrefab.prefab", SearchOption.AllDirectories)[0];
         GameObject prefabEdit = PrefabUtility.LoadPrefabContents(path);
@@ -230,9 +230,9 @@ public class ProgressEvaluator : MonoBehaviour
         }
 
         StartCoroutine(HD90Coroutine());
-#elif (!HD90)
+
         throw new EvalFailedException("Open the ProgressEvaluator.cs file and uncomment (i.e. remove the // symbol) the line at the top that says #define HD90");
-#endif
+
         Debug.LogWarning("PROGRESS EVALUATOR: Seriously, do manual checks on your Git repository, does it look correct? A lot of your subjects at UTS will use it for group projects. " +
             "You don't want to be 'that person' who stuffs up the entire group's repository, do you?");
     }
@@ -276,7 +276,7 @@ public class ProgressEvaluator : MonoBehaviour
             return false;
 
         return true;
-        */
+
     }
 
     private void HighDist100Band()
