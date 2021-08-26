@@ -131,7 +131,7 @@ public class ProgressEvaluator : MonoBehaviour
     }
 
     private void Credit70Band()
-    {
+    {/*
         // Test: blueObj variable
         string[] laContents = Directory.GetFiles("./", "LoadAssets.cs", SearchOption.AllDirectories);
         if (laContents.Length == 0)
@@ -151,7 +151,7 @@ public class ProgressEvaluator : MonoBehaviour
 
         StartCoroutine(Cred70Coroutine());
         Debug.LogWarning("PROGRESS EVALUATOR: Git usage is part of Assessment 3, so make sure you are understanding it now.");
-
+        */
     }
 
     private IEnumerator Cred70Coroutine()
@@ -189,8 +189,8 @@ public class ProgressEvaluator : MonoBehaviour
 
 
     private void HighDist90Band()
-    {
-#if (HD90)
+    {/*
+#if HD90
         // Test: Check PrintAndHide and Tag of RedPrefab
         string path = Directory.GetFiles("./", "RedPrefab.prefab", SearchOption.AllDirectories)[0];
         GameObject prefabEdit = PrefabUtility.LoadPrefabContents(path);
@@ -276,6 +276,7 @@ public class ProgressEvaluator : MonoBehaviour
             return false;
 
         return true;
+        */
     }
 
     private void HighDist100Band()
